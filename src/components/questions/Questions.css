@@ -1,0 +1,13 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.questions__score {
+    align-self: flex-end;
+}
+
+.questions__progress-steps {
+    margin: 30px -20px;
+    width: auto !important;
+}

@@ -1,0 +1,9 @@
+{
+    "topics": {
+        "materials": {
+            "slug": "materials",
+            "label": "Materials",
+            "icon": "TopicMaterials"
+        }
+    }
+}

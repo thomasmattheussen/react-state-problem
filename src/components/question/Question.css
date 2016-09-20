@@ -1,0 +1,15 @@
+.question {
+
+}
+
+.question__text {
+    text-align: center;
+    font-weight: 400;
+}
+
+.question__visual {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    height: auto;
+}

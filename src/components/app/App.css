@@ -1,0 +1,33 @@
+.app {
+
+}
+
+.app__header {
+    padding: 20px;
+    text-align: center;
+}
+
+.app__topics {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin: -15px;
+}
+
+.app__topic {
+    display: block;
+    text-align: center;
+    flex: 1;
+    margin: 15px;
+}
+
+.app__topic-lbl {
+    display: block;
+    margin-top: 10px;
+}
+
+.app__topic .icon {
+    width: 7em;
+    height: 7em;
+}

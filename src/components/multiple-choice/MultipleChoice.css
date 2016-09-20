@@ -1,0 +1,56 @@
+.multiple-choice {
+    display: flex;
+    list-style-type: none;
+    width: calc(100% + 20px);
+    padding: 0;
+    margin: -10px;
+    flex-wrap: wrap;
+}
+
+.multiple-choice__option {
+    display: flex;
+    position: relative;
+    flex: 0 1 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.multiple-choice__button {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: background-color 0.15s ease-out;
+    border: 0 none;
+    outline: none;
+}
+
+.multiple-choice__option.is-correct .multiple-choice__button {
+    background-color: #75a853;
+    color: #fff;
+}
+
+.multiple-choice__option.is-incorrect .multiple-choice__button {
+    background-color: #e35454;
+    color: #fff;
+}
+
+.multiple-choice__radio {
+    //opacity: 0;
+    position: absolute;
+}
+
+
+@media (min-width: 768px) {
+    .multiple-choice__option {
+        flex-basis: 50%;
+        width: 50%;
+        max-width: 50%;
+    }
+}

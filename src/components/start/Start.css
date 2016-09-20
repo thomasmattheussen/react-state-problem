@@ -1,0 +1,23 @@
+.start {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.start__title {
+    margin-top: 0;
+}
+
+.start__text {
+    opacity: 0.6;
+}
+
+.start__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.start__btn {
+    max-width: 400px;
+    margin-top: 50px;
+}

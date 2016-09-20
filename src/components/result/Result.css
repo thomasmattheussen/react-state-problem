@@ -1,0 +1,14 @@
+.result {
+    text-align: center;
+}
+
+.result__score {
+    font-size: 5em;
+    display: block;
+    margin: 0 auto 50px auto;
+}
+
+.result__btn {
+    max-width: 400px;
+    margin-bottom: 10px;
+}

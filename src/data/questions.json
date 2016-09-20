@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "topic": "materials",
+        "type": "multiple-choice",
+        "question": "What's AAA?",
+        "answers": [
+            {
+                "answer": "uuu",
+                "correct": false
+            },
+            {
+                "answer": "xxx",
+                "correct": true
+            },
+            {
+                "answer": "yyy",
+                "correct": false
+            },
+            {
+                "answer": "zzz",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "topic": "materials",
+        "type": "multiple-choice",
+        "question": "What's BBB?",
+        "answers": [
+            {
+                "answer": "123",
+                "correct": true
+            },
+            {
+                "answer": "456",
+                "correct": false
+            },
+            {
+                "answer": "789",
+                "correct": false
+            },
+            {
+                "answer": "000",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "topic": "materials",
+        "type": "multiple-choice",
+        "question": "What's CCC?",
+        "answers": [
+            {
+                "answer": "!!!",
+                "correct": false
+            },
+            {
+                "answer": "%%%",
+                "correct": false
+            },
+            {
+                "answer": "???",
+                "correct": true
+            },
+            {
+                "answer": "$$$",
+                "correct": false
+            }
+        ]
+    }
+]
