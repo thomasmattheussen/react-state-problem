@@ -1,6 +1,25 @@
+Steps to reproduce the problem:
+
+1. Start the app (npm start)
+2. Click the one and only topic 'materials', which is a link to the quiz page
+3. Press start, to start the quiz.
+4. Answer the questions randomly. Until you reach the result screen.
+5. Click the 'try again' button.
+6. Repeat steps 3 to 5 (migt have to try multiple times) to see the problem: The answers are sometimes still highlighted from the previous round of questions.
+
+
+
+I'm guessing that somewhere, I'm probably have some wrong mental models.
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Below you will find some information on how to perform common tasks.  
+Below you will find some information on how to perform common tasks.
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
 
 ## Table of Contents
@@ -99,10 +118,10 @@ For the project to build, **these files must exist with exact filenames**:
 
 You can delete or rename the other files.
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.  
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.
 You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
 
-You can, however, create more top-level directories.  
+You can, however, create more top-level directories.
 They will not be included in the production build so you can use them for things like documentation.
 
 ## Available Scripts
@@ -119,7 +138,7 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.  
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
@@ -167,7 +186,7 @@ Then make sure `package.json` of your project ends with this block:
 }
 ```
 
-Projects generated with `react-scripts@0.2.0` and higher should already have it.  
+Projects generated with `react-scripts@0.2.0` and higher should already have it.
 If you don’t need ESLint integration with your editor, you can safely delete those three lines from your `package.json`.
 
 Finally, you will need to install some packages *globally*:
@@ -188,7 +207,7 @@ npm install --save <library-name>
 
 ## Importing a Component
 
-This project setup supports ES6 modules thanks to Babel.  
+This project setup supports ES6 modules thanks to Babel.
 While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
 For example:
@@ -496,7 +515,7 @@ Check out [this tutorial](https://www.fullstackreact.com/articles/using-create-r
 
 >Note: this feature is available with `react-scripts@0.2.3` and higher.
 
-People often serve the front-end React app from the same host and port as their backend implementation.  
+People often serve the front-end React app from the same host and port as their backend implementation.
 For example, a production setup might look like this after the app is deployed:
 
 ```
@@ -523,7 +542,7 @@ Fetch API cannot load http://localhost:4000/api/todos. No 'Access-Control-Allow-
 
 Keep in mind that `proxy` only has effect in development (with `npm start`), and it is up to you to ensure that URLs like `/api/todos` point to the right thing in production. You don’t have to use the `/api` prefix. Any unrecognized request without a `text/html` accept header will be redirected to the specified `proxy`.
 
-Currently the `proxy` option only handles HTTP requests, and it won’t proxy WebSocket connections.  
+Currently the `proxy` option only handles HTTP requests, and it won’t proxy WebSocket connections.
 If the `proxy` option is **not** flexible enough for you, alternatively you can:
 
 * Enable CORS on your server ([here’s how to do it for Express](http://enable-cors.org/server_expressjs.html)).
@@ -572,7 +591,7 @@ However, you can’t `import` anything from an HTML file. This is why Create Rea
 <link rel="icon" href="./src/favicon/favicon-64.png" sizes="64x64" type="image/png">
 ```
 
-Webpack will parse those `<link href>` attributes and replace them with real paths.  
+Webpack will parse those `<link href>` attributes and replace them with real paths.
 In production, they will become:
 
 ```html
@@ -621,7 +640,7 @@ If you use a Node server, you can even share the route matching logic between th
 
 ## Running Tests
 
->Note: this feature is available with `react-scripts@0.3.0` and higher.  
+>Note: this feature is available with `react-scripts@0.3.0` and higher.
 >[Read the migration guide to learn how to enable it in older projects!](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md#migrating-from-023-to-030)
 
 Create React App uses [Jest](https://facebook.github.io/jest/) as its test runner. To prepare for this integration, we did a [major revamp](https://facebook.github.io/jest/blog/2016/09/01/jest-15.html) of Jest so if you heard bad things about it years ago, give it another try.
@@ -675,7 +694,7 @@ it('sums numbers', () => {
 });
 ```
 
-All `expect()` matchers supported by Jest are [extensively documented here](http://facebook.github.io/jest/docs/api.html#expect-value).  
+All `expect()` matchers supported by Jest are [extensively documented here](http://facebook.github.io/jest/docs/api.html#expect-value).
 You can also use [`jest.fn()` and `expect(fn).toBeCalled()`](http://facebook.github.io/jest/docs/api.html#tobecalled) to create “spies” or mock functions.
 
 ### Testing Components
@@ -734,7 +753,7 @@ it('renders welcome message', () => {
 });
 ```
 
-All Jest matchers are [extensively documented here](http://facebook.github.io/jest/docs/api.html#expect-value).  
+All Jest matchers are [extensively documented here](http://facebook.github.io/jest/docs/api.html#expect-value).
 Nevertheless you can use a third-party assertion library like Chai if you want to, as described below.
 
 ### Using Third Party Assertion Libraries
@@ -770,12 +789,12 @@ global.localStorage = localStorageMock
 
 ### Focusing and Excluding Tests
 
-You can replace `it()` with `xit()` to temporarily exclude a test from being executed.  
+You can replace `it()` with `xit()` to temporarily exclude a test from being executed.
 Similarly, `fit()` lets you focus on a specific test without running any other tests.
 
 ### Coverage Reporting
 
-Jest has an integrated coverage reporter that works well with ES6 and requires no configuration.  
+Jest has an integrated coverage reporter that works well with ES6 and requires no configuration.
 Run `npm test -- --coverage` (note extra `--` in the middle) to include a coverage report like this:
 
 ![coverage report](http://i.imgur.com/5bFhnTS.png)
@@ -816,7 +835,7 @@ By default, the `package.json` of the generated project looks like this:
   }
 ```
 
-If you know that none of your tests depend on [jsdom](https://github.com/tmpvar/jsdom), you can safely remove `--env=jsdom`, and your tests will run faster.  
+If you know that none of your tests depend on [jsdom](https://github.com/tmpvar/jsdom), you can safely remove `--env=jsdom`, and your tests will run faster.
 To help you make up your mind, here is a list of APIs that **need jsdom**:
 
 * Any browser globals like `window` and `document`
@@ -841,7 +860,7 @@ This feature is experimental and still [has major usage issues](https://github.c
 
 ## Building for Relative Paths
 
-By default, Create React App produces a build assuming your app is hosted at the server root.  
+By default, Create React App produces a build assuming your app is hosted at the server root.
 To override this, specify the `homepage` in your `package.json`, for example:
 
 ```js
@@ -860,7 +879,7 @@ Open your `package.json` and add a `homepage` field:
   "homepage": "http://myusername.github.io/my-app",
 ```
 
-**The above step is important!**  
+**The above step is important!**
 Create React App uses the `homepage` field to determine the root URL in the built HTML file.
 
 Now, whenever you run `npm run build`, you will see a cheat sheet with a sequence of commands to deploy to GitHub pages:
@@ -883,7 +902,7 @@ Note that GitHub Pages doesn't support routers that use the HTML5 `pushState` hi
 
 ### Heroku
 
-Use the [Heroku Buildpack for Create React App](https://github.com/mars/create-react-app-buildpack).  
+Use the [Heroku Buildpack for Create React App](https://github.com/mars/create-react-app-buildpack).
 You can find instructions in [Deploying React with Zero Configuration](https://blog.heroku.com/deploying-react-with-zero-configuration).
 
 ### Modulus
