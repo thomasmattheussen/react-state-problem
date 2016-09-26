@@ -55,7 +55,7 @@ class Questions extends Component {
                     <Slider {...sliderSettings} afterSlide={this.afterSlide} slideIndex={currentQuestionIndex} className="questions__slider">
                         <Start onStart={() => onNextQuestion()} topicId={topicId}  />
 
-                        {
+                        {currentQuestionIndex > 0 &&
                             questions.map((question, ndx) => {
                                 return (
                                     <Question {...question} done={onDone} key={`question-${question.id}`} />
